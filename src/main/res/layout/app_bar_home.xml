@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.ClickCentral.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/Theme.ClickCentral.PopupOverlay"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/hamberger_menu"
+                android:id="@+id/imgnav"
+                android:layout_gravity="start"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/_6sdp"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoname"
+                android:layout_gravity="center"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_18sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:id="@+id/imgsearch"
+                android:visibility="visible"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_6sdp"
+                />
+            <TextView
+                android:id="@+id/tvlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login/Sign Up"
+                android:fontFamily="@font/helvetica"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/_6sdp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/personprofile"
+                android:id="@+id/imgprofile"
+                android:visibility="gone"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_6sdp"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

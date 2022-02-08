@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/kross"
+            android:id="@+id/imgclose"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CREATE ACCOUNT TO CONTINUE"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helveticabold"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/imgclose"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2" />
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Name*"
+            android:id="@+id/edname"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+
+            android:padding="@dimen/_6sdp"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/helvetica"
+            android:background="@drawable/edittext_bg"
+            app:layout_constraintTop_toBottomOf="@+id/label"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Email*"
+            android:id="@+id/edemail"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:padding="@dimen/_6sdp"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/helvetica"
+            android:background="@drawable/edittext_bg"
+            app:layout_constraintTop_toBottomOf="@+id/edname"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password*"
+            android:textSize="@dimen/_11sdp"
+            android:id="@+id/edpassword"
+            android:textColor="@color/black"
+            android:padding="@dimen/_6sdp"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/helvetica"
+            android:background="@drawable/edittext_bg"
+            app:layout_constraintTop_toBottomOf="@+id/edemail"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2"
+
+            />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnfb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Continue with Facebook"
+            android:drawableLeft="@drawable/ic_facebook"
+            android:textColor="@color/white"
+            android:background="#415DAD"
+            android:fontFamily="@font/helveticabold"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@+id/edpassword"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2" />
+
+        <TextView
+            android:id="@+id/tvlabel2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Already have an account? Sign In"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helvetica"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/btnfb"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2" />
+
+        <TextView
+            android:id="@+id/tvlabelprivacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By creating an account you agree to our Terms + Conditions and Privacy Policy"
+            android:textColor="@color/black"
+            android:fontFamily="@font/helvetica"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvlabel2"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncreate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:background="@color/black"
+            android:fontFamily="@font/helveticabold"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@+id/tvlabelprivacy"
+            app:layout_constraintEnd_toEndOf="@id/guideline3"
+            app:layout_constraintStart_toStartOf="@id/guideline2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

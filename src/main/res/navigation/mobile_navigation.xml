@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.axat.clickcentral.fragment.home"
+        android:label="@string/menu_home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.axat.clickcentral.fragment.cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/categories"
+        android:name="com.axat.clickcentral.fragment.categories"
+        android:label="categories_fragment"
+        tools:layout="@layout/categories_fragment" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.axat.clickcentral.fragment.profile"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/wishlist"
+        android:name="com.axat.clickcentral.fragment.wishlist"
+        android:label="wishlist_fragment"
+        tools:layout="@layout/wishlist_fragment" />
+    <fragment
+        android:id="@+id/orders"
+        android:name="com.axat.clickcentral.fragment.orders.orders"
+        android:label="orders_fragment"
+        tools:layout="@layout/orders_fragment" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.axat.clickcentral.fragment.settings.settings"
+        android:label="settings_fragment"
+        tools:layout="@layout/settings_fragment" />
+</navigation>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/mobile" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="@dimen/_5sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name:"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPhone 11 Pro 64GB Space Grey"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Order Status"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Condition:"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvcondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sold By:"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvsold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Boutique Retailer"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/create_new_bg"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2.5"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <EditText
+                    android:id="@+id/edquantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_weight="1.5"
+
+                    android:layout_gravity="center|center_horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@drawable/edittext_bg"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+                <TextView
+                    android:id="@+id/tvlabel6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$1398.00"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

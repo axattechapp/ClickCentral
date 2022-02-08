@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sell_label"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+
+                    app:layout_constraintHorizontal_chainStyle="spread" />
+
+                <TextView
+                    android:id="@+id/tvterm"
+                    android:layout_width="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction\n\n
+
+Click Central is an online shopping platform (Platform) that is owned and operated by Click Frenzy Pty Ltd ABN 57 161 066 075, an Australian company, under the trading name Click Central (we, us or our). You can use our Platform to buy a wide range of products from third party retailers and suppliers (Merchants). We connect you to Merchants, who pay us a commission for each order you make on the Platform. While we operate the Platform, when you are buying products on it, you will be transacting directly with Merchants, and we are not a party to these transactions nor responsible for supply of the products to you.
+
+By using the Platform (and any of our associated websites, apps or social media pages) (together, Click Central), you agree to be legally bound by these terms and conditions (Terms) and our Privacy Policy (in addition to any other terms and conditions that may apply to other websites, apps or social media pages). We may change these Terms at any time, and changes will be posted on the Platform. Any change to these Terms applies only to purchases made, and other use of the Platform, after the change is posted on the Platform. By continuing to use the Platform, you agree to be bound by the Terms as changed from time to time.
+
+To the extent that Merchants’ own terms and conditions applying to your purchases from them are inconsistent with these Terms, these Terms will take precedence and apply to the extent of the inconsistency.
+\n\n
+The Platform
+\n\n
+Registration
+\n\n
+You must be a registered member to place orders on the Platform. To register as a member, you must be at least 18 years old and have a current Australian residential address. You will also need to provide us with personal information including your name, address, valid mobile phone number and email address. You are responsible for ensuring this information is up to date at all times. Only one account is permitted per user.
+
+We may suspend or disable your registration at any time if we believe that you are not using Click Central in accordance with these Terms and in an appropriate or reasonable way (including in accordance with the fair use policy set out below), without giving you any advance notice..
+
+Use of the Platform
+
+You are solely responsible for the activity that occurs on your account, and you must keep your account login information secure. We are not responsible for any unauthorised activity on your account if you fail to keep your account login information secure. If you suspect or become aware of any unauthorised use of your account, you must notify us immediately and take immediate steps to re-secure your account.
+"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toBottomOf="@+id/sell_label"
+                    app:layout_constraintLeft_toLeftOf="parent"
+
+
+                    app:layout_constraintHorizontal_chainStyle="spread" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

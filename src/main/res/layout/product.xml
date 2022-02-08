@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/sliderrel"
+                android:layout_marginTop="@dimen/_10sdp"
+                >
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/tut_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:id="@+id/dots"
+                    android:layout_below="@+id/tut_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/sliderrel"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPhone 11 Pro 64GB Space Grey"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/black"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvdisprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$1398.00"
+                    android:gravity="center"
+
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$1598.00"
+                    android:gravity="center"
+
+                    android:layout_weight="1"
+                    android:padding="@dimen/_2sdp"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#D9D9D9"
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    >
+
+                    <TextView
+                        android:id="@+id/label4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/helvetica"
+                        android:padding="@dimen/_2sdp"
+                        android:text="Pay in 4 interest-free payments of $9.99 with"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvpaylabel"
+                        android:layout_width="@dimen/_42sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:layout_toRightOf="@+id/label4"
+                        android:layout_weight="1"
+                        android:background="@drawable/afterpay_withbg"
+                        android:fontFamily="@font/helvetica"
+                        android:gravity="end"
+                        android:padding="@dimen/_2sdp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:src="@drawable/ic_info"
+                        android:id="@+id/imginfo"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/tvpaylabel"
+                        android:layout_height="@dimen/_10sdp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/_5sdp"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:src="@drawable/blackouterheart"
+                        android:id="@+id/imgheart"
+                        android:layout_marginStart="@dimen/_4sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:id="@+id/tvadd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/imgheart"
+                        android:fontFamily="@font/helvetica"
+                        android:padding="@dimen/_2sdp"
+                        android:text="ADD TO WHSHLIST"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_9sdp"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rel1"
+                    android:layout_margin="@dimen/_8sdp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Shop:"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvshopname"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Boutique Retailer"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Condition:"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvcondi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sold By:"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvsold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="MobileCiti"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/create_new_bg"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2.5"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Quantity"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <EditText
+                                android:id="@+id/edquantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_weight="1.5"
+
+                                android:layout_gravity="center|center_horizontal"
+                                android:gravity="center|center_horizontal"
+                                android:background="@drawable/edittext_bg"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel7"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SKU #"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvsku"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="baab00d8"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+
+                            >
+                            <TextView
+                                android:id="@+id/tvlabel6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Details"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/helveticabold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+                                android:id="@+id/tvdetail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="View"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:fontFamily="@font/helvetica"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/create_new_bg"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_marginTop="@dimen/_30sdp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/_10sdp"
+
+
+                    >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/btnbuy"
+                        android:fontFamily="@font/helvetica"
+                        android:textSize="@dimen/_12sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:text="Buy Now"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/btnaddcart"
+                        android:fontFamily="@font/helvetica"
+                        android:textSize="@dimen/_12sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:text="Add To Cart"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/badge_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notifybadge"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:textSize="11sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/filled_circle_indicator"
+        android:layout_gravity="top"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="36dp"
+        android:gravity="center"
+        android:padding="2dp"
+        tools:text="9+" />
+</FrameLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="wrap_content"-->
+
+<!--    android:layout_height="wrap_content"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/notifybadge"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="top|right"-->
+
+
+<!--        android:background="@drawable/filled_circle_indicator"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="@dimen/_3sdp"-->
+<!--        android:text="1"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="11sp" />-->
+<!--</RelativeLayout>-->

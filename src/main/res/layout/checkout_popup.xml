@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#D9D9D9"
+    android:layout_alignParentBottom="true"
+    android:layout_height="match_parent">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:fillViewport="true"
+      android:scrollbars="none"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_10sdp"
+          android:orientation="vertical"
+          android:background="#E0E0E0"
+          android:layout_marginBottom="@dimen/_10sdp"
+
+          >
+          <TextView
+              android:id="@+id/header"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="COMPLETE CHECKOUT"
+              android:padding="@dimen/_2sdp"
+              android:gravity="center"
+              android:fontFamily="@font/helveticabold"
+              android:textSize="@dimen/_12sdp"
+              android:textColor="@color/black"
+
+              />
+
+          <TextView
+              android:id="@+id/label"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Shipping"
+              android:padding="@dimen/_5sdp"
+              android:fontFamily="@font/helveticabold"
+              android:textSize="@dimen/_12sdp"
+              android:textColor="@color/black"
+
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:id="@+id/edname"
+              android:singleLine="true"
+              android:hint="Name"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:id="@+id/edaddress"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:singleLine="true"
+              android:hint="Address"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:id="@+id/edcity"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:singleLine="true"
+              android:hint="City"
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:id="@+id/edcode"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:inputType="number"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:singleLine="true"
+              android:hint="Postcode  "
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <!--  Payment-->
+          <TextView
+              android:id="@+id/labelpay"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Payment Details"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:padding="@dimen/_5sdp"
+              android:fontFamily="@font/helveticabold"
+              android:textSize="@dimen/_12sdp"
+              android:textColor="@color/black"
+
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:id="@+id/edcardname"
+              android:singleLine="true"
+              android:hint="Name on Card"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <EditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:padding="@dimen/_5sdp"
+              android:id="@+id/ednumber"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:singleLine="true"
+              android:hint="Card Number"
+              android:textColorHint="@color/black"
+              android:textColor="@color/black"
+              />
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:layout_height="wrap_content">
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:paddingTop="@dimen/_5sdp"
+                  android:paddingStart="@dimen/_5sdp"
+                  android:paddingEnd="@dimen/_20sdp"
+                  android:id="@+id/edexpiry"
+                  android:inputType="number"
+                  android:singleLine="true"
+                  android:hint="Expiry"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  />
+              <EditText
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:paddingBottom="@dimen/_5sdp"
+                  android:paddingTop="@dimen/_5sdp"
+                  android:paddingStart="@dimen/_5sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:paddingEnd="@dimen/_20sdp"
+                  android:id="@+id/edcvv"
+                  android:inputType="number"
+                  android:layout_toRightOf="@+id/edexpiry"
+                  android:layout_marginStart="@dimen/_20sdp"
+                  android:singleLine="true"
+                  android:hint="CVV  "
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  />
+
+
+          </RelativeLayout>
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:layout_marginTop="@dimen/_4sdp"
+              android:background="@color/white"
+              />
+
+
+
+
+          <!--        payment end-->
+
+          <!--        promo-->
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_10sdp"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:id="@+id/labelpromo"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:fontFamily="@font/helvetica"
+                  android:padding="@dimen/_5sdp"
+                  android:text="Enter Promo Code"
+                  android:textColor="@color/black"
+                  android:textSize="@dimen/_12sdp"
+
+                  />
+              <EditText
+                  android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white"
+                  android:padding="@dimen/_5sdp"
+                  android:id="@+id/edpromo"
+
+                  android:layout_toRightOf="@+id/labelpromo"
+                  android:layout_marginStart="@dimen/_20sdp"
+                  android:singleLine="true"
+                  android:hint="promo code"
+                  android:textColorHint="@color/black"
+                  android:textColor="@color/black"
+                  />
+
+
+          </RelativeLayout>
+
+
+          <!--        promo end-->
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@color/white"
+              />
+
+          <TextView
+              android:id="@+id/labelsumm"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Summary"
+              android:padding="@dimen/_5sdp"
+              android:fontFamily="@font/helveticabold"
+              android:textSize="@dimen/_12sdp"
+              android:textColor="@color/black"
+
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:padding="@dimen/_2sdp"
+              >
+              <TextView
+                  android:id="@+id/label1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Subtotal"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+              <TextView
+                  android:id="@+id/tvsubtotal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="$29.95"
+                  android:gravity="end"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:padding="@dimen/_2sdp"
+              >
+              <TextView
+                  android:id="@+id/label2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Shipping Charges"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+              <TextView
+                  android:id="@+id/tvshiping"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="$9.99"
+                  android:gravity="end"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+          </LinearLayout>
+
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="2"
+              android:padding="@dimen/_2sdp"
+              >
+              <TextView
+                  android:id="@+id/label3"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Order Total"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+              <TextView
+                  android:id="@+id/tvtotal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="$39.94"
+                  android:gravity="end"
+                  android:layout_weight="1"
+                  android:padding="@dimen/_2sdp"
+                  android:fontFamily="@font/helvetica"
+                  android:textSize="@dimen/_12sdp"
+                  android:textColor="@color/black"
+
+                  />
+
+          </LinearLayout>
+
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/create_new_bg"
+              android:id="@+id/btnproceed"
+
+              android:layout_marginTop="@dimen/_5sdp"
+              android:fontFamily="@font/helvetica"
+              android:textSize="@dimen/_12sdp"
+              android:textColor="@color/white"
+              android:text="Pay now"
+
+              />
+
+
+
+
+      </LinearLayout>
+
+  </ScrollView>
+
+</RelativeLayout>

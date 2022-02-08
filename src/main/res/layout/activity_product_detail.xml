@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.ProductDetail">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:theme="@style/Theme.ClickCentral.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/Theme.ClickCentral.PopupOverlay"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            >
+
+            <TextView
+                android:id="@+id/sell_label"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Product Details"
+                android:fontFamily="@font/helveticabold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                />
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/kross"
+                android:id="@+id/imgclose"
+                android:visibility="visible"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/_6sdp"
+                />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true"
+        android:layout_below="@+id/appbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mobile"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/image"
+                />
+
+            <TextView
+                android:id="@+id/tvdetail"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/image"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Apple iPhone 11 Pro Max 64GB - Space Grey - Pro cameras. Pro display. Pro performance.
+\n\n
+6.5-inch Super Retina XDR OLED display
+Water and dust resistance (4 metres for up to 30 minutes, IP68)
+Triple-camera system with 12-megapixel Ultra Wide, Wide and Telephoto cameras
+12-megapixel TrueDepth front camera with Portrait mode, 4K video and slow motion
+Face ID for secure authentication and Apple Pay
+New - Brand New / Sealed\n\n
+Apple iPhone 11 Pro Max 64GB - Space Grey
+\n\n
+And then there was Pro.
+A transformative triple‑camera system that adds tonnes of capability without complexity. An unprecedented leap in battery life. And a mind‑blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro.
+Pro camera system, We’ve three‑upped ourselves.
+Meet the first triple‑camera system to combine cutting‑edge technology with the legendary simplicity of iPhone. Capture up to four times more scene. Get beautiful images in drastically lower light. Shoot the highest‑quality video in a smartphone — then edit with the same tools you love for photos. You’ve never shot with anything like it.
+Expanded field of view.
+\n\n
+iPhone 11 Pro Max lets you zoom from the Telephoto all the way out to the new Ultra Wide camera, for an impressive 4× optical zoom range.
+Elegant, immersive interface.
+We leveraged the wider field of view to let you see what’s happening outside the image frame — and simply tap to capture it. And there’s almost nothing between you and your subject except a new pro camera font. So you’re always fully immersed in the scene.
+4K video Shoot it. Flip it. Zoom it. Crop it. Cut it. Light it. Tweak it. Love it.
+iPhone 11 Pro Max lets you capture videos that are beautifully true to life, with greater detail and smoother motion. Epic processing power means it can shoot 4K video with extended dynamic range and cinematic video stabilisation — all at 60 fps. You get more creative control too, with four times more scene and powerful new editing tools to play with.
+Boom, you’re a film editor.
+iOS 13 lets you edit videos just like you edit photos. Rotate, crop, auto-enhance, add filters and more.
+"
+
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/helvetica"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+
+               />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

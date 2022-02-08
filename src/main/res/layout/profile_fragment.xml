@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgprofile"
+                    android:layout_width="@dimen/_140sdp"
+                    android:src="@drawable/personprofile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_height="@dimen/_140sdp"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Thomas Jones"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgprofile"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvloc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sydney"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvname"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+<!--                address-->
+                <TextView
+                    android:id="@+id/tvlabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvloc"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvaddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="123 Wallaby Way, Sydney 2391"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvlabel"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+
+                <!--                phone-->
+                <TextView
+                    android:id="@+id/tvlabel1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvaddress"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="0412892101"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvlabel1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <!--                purchase-->
+                <TextView
+                    android:id="@+id/tvlabel2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="@id/guideline2"
+                    android:text="Recent Purchases"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:fontFamily="@font/helveticabold"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+
+                    app:layout_constraintTop_toBottomOf="@+id/tvphone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tvemptytext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="You have no recent purchases"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:fontFamily="@font/helvetica"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvlabel2"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
